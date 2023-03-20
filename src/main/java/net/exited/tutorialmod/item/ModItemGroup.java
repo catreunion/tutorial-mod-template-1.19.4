@@ -7,14 +7,12 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.exited.tutorialmod.TutorialMod;
 
-
 public class ModItemGroup {
-    public static ItemGroup CITRINE;
+  public static ItemGroup CITRINE;
 
-    public static void registerItemGroups() {
-        CITRINE = FabricItemGroup.builder(new Identifier(TutorialMod.MOD_ID, "citrine"))
-                .displayName(Text.translatable("itemgroup.citrine"))
-                .icon(() -> new ItemStack(ModItems.CITRINE)).build();
+  public static void registerItemGroups() {
+    CITRINE = FabricItemGroup.builder(new Identifier(TutorialMod.MOD_ID, "citrine"))
+      .displayName(Text.translatable("itemgroup.citrine"))
+      .icon(() -> new ItemStack(ModItems.CITRINE)).build();
     }
 }
-
