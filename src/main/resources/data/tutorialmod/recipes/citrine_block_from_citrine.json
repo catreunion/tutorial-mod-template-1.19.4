@@ -6,11 +6,7 @@
       "item": "tutorialmod:citrine"
     }
   },
-  "pattern": [
-    "###",
-    "###",
-    "###"
-  ],
+  "pattern": ["###", "###", "###"],
   "result": {
     "item": "tutorialmod:citrine_block"
   }

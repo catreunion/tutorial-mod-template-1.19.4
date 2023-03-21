@@ -1,6 +1,4 @@
 {
   "replace": false,
-  "values": [
-    "tutorialmod:citrine_ore"
-  ]
+  "values": ["tutorialmod:citrine_ore"]
 }
