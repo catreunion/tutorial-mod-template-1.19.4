@@ -3,13 +3,13 @@
   "id": "tutorialmod",
   "version": "${version}",
   "name": "Tutorial Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
-  "authors": ["Me!"],
+  "description": "type something ...",
+  "authors": ["exited"],
   "contact": {
     "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
-  "license": "CC0-1.0",
+  "license": "MIT",
   "icon": "assets/tutorialmod/icon.png",
   "environment": "*",
   "entrypoints": {
@@ -19,8 +19,8 @@
   },
   "mixins": ["tutorialmod.mixins.json"],
   "depends": {
-    "fabricloader": ">=0.14.17",
-    "minecraft": "~1.19.4",
+    "fabricloader": ">=0.14.12",
+    "minecraft": "~1.19.3",
     "java": ">=17",
     "fabric-api": "*"
   },
