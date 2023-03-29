@@ -25,8 +25,9 @@ public class ModItems {
 
   public static void addItemsToItemGroup() {
     addToItemGroup(ItemGroups.INGREDIENTS, CITRINE);
-    addToItemGroup(ItemGroups.INGREDIENTS, RAW_CITRINE);
     addToItemGroup(ModItemGroup.CITRINE, CITRINE);
+
+    addToItemGroup(ItemGroups.INGREDIENTS, RAW_CITRINE);
     addToItemGroup(ModItemGroup.CITRINE, RAW_CITRINE);
   }
 

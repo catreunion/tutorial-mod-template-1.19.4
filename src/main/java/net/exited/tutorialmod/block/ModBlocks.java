@@ -17,6 +17,13 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
+  private static Item registerBlockItem(String name, Block block, ItemGroup group) {
+    Item item = Registry.register(Registries.ITEM, new Identifier(TutorialMod.MOD_ID, name),
+            new BlockItem(block, new FabricItemSettings()));
+    ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
+    return item;
+  }
+
   private static Block registerBlock(String name, Block block, ItemGroup group) {
     registerBlockItem(name, block, group);
     return Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, name), block);
@@ -32,13 +39,6 @@ public class ModBlocks {
   public static final Block DEEPSLATE_CITRINE_ORE = registerBlock("deepslate_citrine_ore",
     new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool(),
     UniformIntProvider.create(2, 6)), ModItemGroup.CITRINE);
-
-  private static Item registerBlockItem(String name, Block block, ItemGroup group) {
-    Item item = Registry.register(Registries.ITEM, new Identifier(TutorialMod.MOD_ID, name),
-      new BlockItem(block, new FabricItemSettings()));
-    ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
-    return item;
-  }
 
   public static void registerModBlocks() {
     TutorialMod.LOGGER.info("Registering ModBlocks for " + TutorialMod.MOD_ID);

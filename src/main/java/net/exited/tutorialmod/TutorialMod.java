@@ -1,9 +1,9 @@
 package net.exited.tutorialmod;
 
-import net.exited.tutorialmod.block.ModBlocks;
+import net.fabricmc.api.ModInitializer;
 import net.exited.tutorialmod.item.ModItemGroup;
 import net.exited.tutorialmod.item.ModItems;
-import net.fabricmc.api.ModInitializer;
+import net.exited.tutorialmod.block.ModBlocks;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
